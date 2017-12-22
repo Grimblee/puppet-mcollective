@@ -4,6 +4,11 @@ class mcollective (
   $server = true,
   $client = false,
 
+  # client.cfg file parameters
+  $client_owner = 'root',
+  $client_group = '0',
+  $client_mode  = '0444',
+
   # installing packages
   $manage_packages        = true,
   $version                = 'present',
